@@ -116,19 +116,29 @@ button:focus {
 	top: 0;
 }
 
-.bravely-intro-section, .first-step-section {
+.section {
+	min-height: 400px;
 	padding: 80px 150px 0px;
 }
 
-.bravely-intro-section h3 {
+.back-img h2 {
+	color: white;
+	font-weight: 400;
+}
+
+.back-img h3 {
 	color: white;
 	font-size: 20px;
 	font-weight: lighter;
 	text-align: center;
 }
 
+.back-img li {
+	color: white;
+}
+
 /* ----- first step content and grid ----- */
-.first-step-section p {
+.first-step p {
 	color: #4C4E4F;
 	font-size: 20px;
 	line-height: 1.4em;
@@ -168,6 +178,30 @@ button:focus {
 	grid-row: 1;
 }
 
+.col-right-wide {
+	grid-column: 2 / span 2;
+}
+
+.row-1 {
+	grid-row: 1;
+}
+
+.row-2 {
+	grid-row: 2;
+}
+
+.row-3 {
+	grid-row: 3;
+}
+
+
+/* ----- how it works section ----- */
+.how-it-works {
+	background-color: rgba(22,11,35,.4);
+}
+
+
+
 /* ----- media queries for screen responsivity ----- */
 @media(min-width: 961px) {
 	.hero-container::before {
@@ -176,7 +210,7 @@ button:focus {
 }
 
 @media(min-width: 961px) and (max-width: 1024px) {
-	.bravely-intro-section, .first-step-section {
+	.section {
 		padding: 80px 64px 0px;
 	}
 
@@ -186,7 +220,7 @@ button:focus {
 }
 
 @media(min-width: 769px) and (max-width: 960px) {
-	.bravely-intro-section, .first-step-section {
+	.section {
 		padding: 80px 48px 0px;
 	}
 
@@ -196,7 +230,7 @@ button:focus {
 }
 
 @media(min-width: 641px) and (max-width: 768px) {
-	.bravely-intro-section, .first-step-section {
+	.section {
 		padding: 80px 36px 0px;
 	}
 
@@ -206,7 +240,7 @@ button:focus {
 }
 
 @media(min-width: 400px) and (max-width: 640px) {
-	.bravely-intro-section, .first-step-section {
+	.section {
 		padding: 60px 20px 0px;
 	}
 

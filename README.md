@@ -1,7 +1,7 @@
 # bravely
 Github suggested calling this repository "automatic-guacamole," which is an amazing idea, but not a particularly descriptive name.
 
-Here's my attempt at building out the front-end of Bravely's marketing site. The "How it works" section is still... in the works.
+Here's my attempt at building out the front-end of Bravely's marketing site.
 
 ## A few quick notes:
 - As an alternative to Bravely's fancier fonts, I'm using slightly smaller versions of Montserrat and Futura.

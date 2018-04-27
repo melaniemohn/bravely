@@ -24,8 +24,14 @@ h3 {
 	margin-top: 0px;
 }
 
+.block-space{
+	height: 40px;
+	padding: 17px;
+}
+
 /* ----- navbar and buttons ----- */
 button, .nav-link {
+	border: none;
 	color: white;
 	display: inline-block;
   font-family: 'Futura', sans-serif;
@@ -36,11 +42,16 @@ button, .nav-link {
 	vertical-align: middle;
 }
 
-nav {
-	padding-top: 16px;
+.nav-lg {
 	box-sizing: border-box;
-  padding-left: 139px;
-  padding-right: 139px;
+	padding: 16px 139px 0px;
+}
+
+.nav-xs {
+	background-color: #412565;
+	display: none;
+	/*height: 34px;*/
+	width: 100%;
 }
 
 .brand-logo {
@@ -67,39 +78,35 @@ nav {
 	transition: color 170ms ease-in-out, background-color 170ms ease-in-out;
 }
 
-button {
-	background-color: #67C5C7;
-	border: none;
-	font-size: 16px;
-	padding: 13px 26px;
+.hamburger-menu {
+	background-color: transparent;
+	padding: 6px 12px;
 }
 
-button:hover {
-	opacity: .8;
+.hamburger-menu img {
+	height: 34px;
+	width: 36px;
 }
 
 .demo-button {
+	background-color: #67C5C7;
+	border: none;
 	display: block;
+	font-size: 16px;
 	margin-left: auto;
 	margin-right: auto;
+	padding: 13px 26px;
 }
 
-.sticky-button {
-	font-size: 12px;
-	padding: 10px 20px;
-	/*position: -webkit-sticky;*/
-	/*position: sticky;*/
-	/* TODO: add shadow */
-	position: fixed;
-	bottom: 20px;
-	right: 25px;
+.demo-button:hover {
+	opacity: .8;
 }
 
 /* ----- hero image and intro content ----- */
 .hero-container {
-	/*background-color: #160B23;*/
 	background-color: rgba(22,11,35,.4);
 	display: block;
+	max-height: 900px;
 	position: relative;
 	width: 100%;
 	left: 0;
@@ -108,8 +115,9 @@ button:hover {
 
 .hero-container::before {
   content: "";
-	background: no-repeat center url('images/hero.jpg');
+	background: no-repeat center top url('images/hero.jpg');
 	background-attachment: fixed;
+	background-size: auto 100%;
   top: 0;
   left: 0;
   bottom: 0;
@@ -119,7 +127,7 @@ button:hover {
 }
 
 .bravely-intro-section, .first-step-section {
-	padding: 80px 150px;
+	padding: 80px 150px 0px;
 }
 
 .bravely-intro-section h3 {
@@ -171,34 +179,72 @@ button:hover {
 }
 
 /* ----- media queries for screen responsivity ----- */
+@media(min-width: 961px) {
+	.hero-container::before {
+		background-size: 100%;
+	}
+}
+
 @media(min-width: 961px) and (max-width: 1024px) {
 	.bravely-intro-section, .first-step-section {
-		padding: 80px 64px;
+		padding: 80px 64px 0px;
+	}
+
+	.nav-lg {
+		padding: 16px 53px 0px;
 	}
 }
 
 @media(min-width: 769px) and (max-width: 960px) {
 	.bravely-intro-section, .first-step-section {
-		padding: 80px 48px;
+		padding: 80px 48px 0px;
+	}
+
+	.nav-lg {
+		padding: 16px 37px 0px;
 	}
 }
 
 @media(min-width: 641px) and (max-width: 768px) {
 	.bravely-intro-section, .first-step-section {
-		padding: 80px 36px;
+		padding: 80px 36px 0px;
+	}
+
+	.nav-lg {
+		padding: 16px 25px 0px;
 	}
 }
 
 @media(min-width: 400px) and (max-width: 640px) {
 	.bravely-intro-section, .first-step-section {
-		padding: 60px 20px;
+		padding: 60px 20px 0px;
 	}
 
 	.grid-container {
 		display: block;
 	}
 
+	.nav-lg {
+		display: none;
+	}
+
+	.nav-xs {
+		display: block;
+	}
+
+	h1 {
+		font-size: 30px;
+	}
+
+	h2 {
+		font-size: 26px;
+	}
+
 	h3 {
 		font-size: 24px;
+	}
+
+	button {
+		font-size: 14px;
 	}
 }

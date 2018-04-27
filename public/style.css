@@ -42,6 +42,10 @@ button, .nav-link {
 	vertical-align: middle;
 }
 
+button:focus {
+	outline: none;
+}
+
 .nav-lg {
 	box-sizing: border-box;
 	padding: 16px 139px 0px;

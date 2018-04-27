@@ -50,7 +50,6 @@ button, .nav-link {
 .nav-xs {
 	background-color: #412565;
 	display: none;
-	/*height: 34px;*/
 	width: 100%;
 }
 
@@ -111,19 +110,6 @@ button, .nav-link {
 	width: 100%;
 	left: 0;
 	top: 0;
-}
-
-.hero-container::before {
-  content: "";
-	background: no-repeat center top url('images/hero.jpg');
-	background-attachment: fixed;
-	background-size: auto 100%;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
 }
 
 .bravely-intro-section, .first-step-section {
@@ -244,7 +230,7 @@ button, .nav-link {
 		font-size: 24px;
 	}
 
-	button {
+	.demo-button {
 		font-size: 14px;
 	}
 }

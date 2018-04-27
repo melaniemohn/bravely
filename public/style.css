@@ -18,7 +18,9 @@ h2 {
 
 h3 {
 	color: #92278f;
-	font-size: 36px;
+	font-size: 26px;
+	line-height: 1.4em;
+	letter-spacing: 0em;
 	margin-top: 0px;
 }
 
@@ -131,6 +133,8 @@ button:hover {
 .first-step-section p {
 	color: #4C4E4F;
 	font-size: 20px;
+	line-height: 1.4em;
+	letter-spacing: 0em;
 }
 
 .grid-container {
@@ -166,4 +170,35 @@ button:hover {
 	grid-row: 1;
 }
 
-/* ----- TODO: media queries ----- */
+/* ----- media queries for screen responsivity ----- */
+@media(min-width: 961px) and (max-width: 1024px) {
+	.bravely-intro-section, .first-step-section {
+		padding: 80px 64px;
+	}
+}
+
+@media(min-width: 769px) and (max-width: 960px) {
+	.bravely-intro-section, .first-step-section {
+		padding: 80px 48px;
+	}
+}
+
+@media(min-width: 641px) and (max-width: 768px) {
+	.bravely-intro-section, .first-step-section {
+		padding: 80px 36px;
+	}
+}
+
+@media(min-width: 400px) and (max-width: 640px) {
+	.bravely-intro-section, .first-step-section {
+		padding: 60px 20px;
+	}
+
+	.grid-container {
+		display: block;
+	}
+
+	h3 {
+		font-size: 24px;
+	}
+}
